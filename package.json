@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cli-table": "^0.3.1",
+    "colors": "^1.3.1",
+    "consolidate": "^0.15.1",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-list-endpoints": "^3.0.1",
+    "handlebars": "^4.0.11",
+    "ip": "^1.1.5",
+    "mongoose": "^5.2.5",
+    "portfinder": "^1.0.13",
+    "vue-cli": "^2.9.6"
+  },
+  "scripts": {
+    "server": "node server",
+    "client": "cd client && yarn serve",
+    "serve": "concurrently --kill-others \"yarn run server\" \"yarn run client\"",
+    "reset": "node server/scripts/seed",
+    "seed": "node server/scripts/seed",
+    "setup": "node server/scripts/setup"
+  },
+  "devDependencies": {
+    "node-fetch": "^2.2.0",
+    "concurrently": "^4.1.0"
+  },
+  "name": "recar-frontend-test",
+  "version": "1.0.0",
+  "description": "Frontend test for recar recruitment.",
+  "main": "server/index.js",
+  "author": "Mantas Morkūnas (bernessco@gmail.com)",
+  "license": "ISC"
+}
