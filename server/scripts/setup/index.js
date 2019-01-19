@@ -7,3 +7,9 @@ fs.copyFile(path.resolve(__dirname, './.env.example'), path.resolve(__dirname, '
         console.error('[SETUP]', err.message);
     }
 });
+
+fs.copyFile(path.resolve(__dirname, './.env.client.example'), path.resolve(__dirname, '../../../client/.env'), COPYFILE_EXCL, (err) => {
+    if (err) {
+        console.error('[SETUP]', err.message);
+    }
+});
